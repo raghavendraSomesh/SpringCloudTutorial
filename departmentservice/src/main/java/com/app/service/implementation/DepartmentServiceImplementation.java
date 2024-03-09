@@ -1,5 +1,6 @@
 package com.app.service.implementation;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.entity.Department;
@@ -15,6 +16,8 @@ import lombok.extern.slf4j.Slf4j;
 @AllArgsConstructor
 public class DepartmentServiceImplementation  implements DepartmentService{
 	
+	
+	@Autowired
 	private DepartmentRepository departmentRepository;
 	
 	
